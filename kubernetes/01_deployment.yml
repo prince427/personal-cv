@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: personal-cv
+  labels:
+    app: personal-cv
+spec:
+  selector:
+    matchLabels:
+      app: personal-cv
+  template:
+    metadata:
+      labels:
+        app: personal-cv
+    spec:
+      containers:
+      - name: personal-cv
+        image: prince427/personal-cv                            
+        ports: 
+        - name: http-port
+          containerPort: 5000
+
