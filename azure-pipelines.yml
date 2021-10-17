@@ -26,16 +26,16 @@ stages:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
-          $(tag)
+          prince427/personal-cv$(tag)
     - task: Docker@2
       displayName: Push image
       inputs:
         containerRegistry: |
           DockerHub
-        repository: $(imageName)
+        repository: prince427/personal-cv
         command: push
         tags: |
-          test1
+          prince427/personal-cv$(tag)
 
     - task: CmdLine@2
       displayName: Debug
