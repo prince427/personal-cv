@@ -1,0 +1,19 @@
+{
+  "name": "personal-cv",
+  "version": "1.0.0",
+  "description": "npm package for creating changelog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prince427/personal-cv.git"
+  },
+  "author": "Nazim Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prince427/personal-cv/issues"
+  },
+  "homepage": "https://github.com/prince427/personal-cv#readme"
+}
